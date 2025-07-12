@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory Dashboard</title>
+    <link rel="stylesheet" href="./src/main/resources/static/styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Employee Directory</h1>
+        <input type="search" id="search-input" placeholder="Search by name or email"/>
+        <button id="filter-toggle-btn">Filter</button>
+    </header>
+        <aside id="filter-sidebar" class="hidden">
+            <h2>Filter Employees</h2>
+            <form id="filter-form">
+                <div class="filter-form-card">
+                    <label for="filter-firstName">First Name:</label>
+                    <input type="text" id="filter-firstName" name="filter-firstName" />
+                </div>
+                <div class="filter-form-card">
+                    <label for="filter-department">Department:</label>
+                    <input type="text" id="filter-department" name="filter-department" />
+                </div>
+                <div class="filter-form-card">
+                    <label for="filter-role">Role:</label>
+                    <input type="text" id="filter-role" name="filter-role" />
+                </div>
+
+                <div class="filter-buttons">
+                    <button type="button" id="apply-filter-btn">Apply</button>
+                    <button type="button" id="reset-filter-btn">Reset</button>
+                </div>
+            </form>
+        </aside>
+    
+
+    <section id="controls">
+        <div>
+            <label for="sort-select">Sort:</label>
+            <select id="sort-select">
+                <option value="">--Select--</option>
+                <option value="firstName">First Name</option>
+                <option value="department">Department</option>
+            </select>
+
+            <label for="items-per-page">Show:</label>
+            <select id="items-per-page">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+
+        <div>
+            <button id="add-employee-btn">Add Employee</button>
+        </div>
+    </section>
+
+    <main id="employee-list-container">
+        <!-- employee list cards will be rendered here by javascript-->
+    </main>
+
+    <footer>
+        <p>© 2025 Employee Directory App. All rights reserved.</p>
+    </footer>
+
+    <script src="./src/main/resources/static/data.js"></script>
+    <script src="./src/main/resources/static/app.js"></script>
+</body>
+</html>
