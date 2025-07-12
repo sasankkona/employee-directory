@@ -57,15 +57,15 @@ employee-directory/
 
 ### Dashboard Page
 
-![Dashboard](screenshots/screenshot1.png)
+![Dashboard](./src/main/screenshots/screenshot1.png)
 
 ### Add Employee Form
 
-![Add Employee Form](screenshots/screenshot2.png)
+![Add Employee Form](./src/main/screenshots/screenshot2.png)
 
 ### Dashboard with Filter Sidebar
 
-![Filter Sidebar](screenshots/screenshot3.png)
+![Filter Sidebar](./src/main/screenshots/screenshot3.png)
 
 ---
 
